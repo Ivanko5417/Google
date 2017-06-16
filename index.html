@@ -14,10 +14,10 @@
 <body>
   <header>
    	<span  class = "span-words">
-		<a class="words-header">Почта</a>
-		<a class="words-header">Картинки</a>
+		<a class="words-header" href="https://mail.google.com/mail/?tab=wm">Почта</a>
+		<a class="words-header" href="https://www.google.by/imghp?hl=ru&tab=wi&ei=JhREWY2CNeyH6ATcu6-gAw&ved=0EKouCBQoAQ">Картинки</a>
 		<a id="apps" ></a>
-		<a id="enter">Войти</a>
+		<a id="enter" onclick="sign()">Войти</a>
 	</span>
   </header>
   <main>
@@ -26,9 +26,9 @@
 			<img src="res/google.png" height = "102" width = "300">
 			<div class="BY">Беларусь</div>
 		</figure>
-		<div id="search"> 
+		<div id="search">
 			<div class="text-field-div">
-				<input class="text-field" type="text">
+				<input id = "input" class="text-field" type="text">
 			</div>
 			<div id="buttons">
 				<a id="keyboard"></a>
@@ -36,22 +36,22 @@
 			</div>
 	  </div>
 	  <br>
-      <button class="main-buttons">Поиск в Google</button>
-      <button class="main-buttons">Мне повезёт!</button>
+      <button class="main-buttons" onclick="search()" >Поиск в Google</button>
+      <button class="main-buttons" onclick="lucky()">Мне повезёт!</button>
     </figure>
   </main>
   <footer>
     <figure class = "footer">
 		<span id="left-span" class = "span-words">
-			<a class="words-footer">Реклама</a>
-			<a class="words-footer">Для бизнеса</a>
-			<a class="words-footer">Всё о Google</a>
+			<a class="words-footer" href="https://www.google.by/intl/ru/ads/?fg=1">Реклама</a>
+			<a class="words-footer" href="https://www.google.by/services/?fg=1">Для бизнеса</a>
+			<a class="words-footer" href="https://www.google.by/intl/ru/about.html?fg=1">Всё о Google</a>
 		</span>
 		<span   class = "span-words">
-			<a class="words-footer">Конфиденциальность</a>
-			<a class="words-footer">Условия</a>
-			<a class="words-footer">Настройки</a>
-			<a class="words-footer">Перейти на Google.com</a>
+			<a class="words-footer" href="https://www.google.by/intl/ru/policies/privacy/?fg=1">Конфиденциальность</a>
+			<a class="words-footer" href="https://www.google.by/intl/ru/policies/terms/?fg=1">Условия</a>
+			<a class="words-footer" href="https://www.google.by/preferences?hl=ru">Настройки</a>
+			<a class="words-footer" href="https://www.google.com/?gfe_rd=cr&ei=ExNEWfSaGZGDyAWu9YboDg&gws_rd=ssl,cr&fg=1">Перейти на Google.com</a>
 		</span>
     </figure>
   </footer>
