@@ -11,12 +11,85 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
+<body onclick="bodyClick()">
   <header>
    	<span  class = "span-words">
 		<a class="words-header" href="https://mail.google.com/mail/?tab=wm">Почта</a>
 		<a class="words-header" href="https://www.google.by/imghp?hl=ru&tab=wi&ei=JhREWY2CNeyH6ATcu6-gAw&ved=0EKouCBQoAQ">Картинки</a>
-		<a id="apps" ></a>
+    <div class="apps-div-m">
+      <a id="apps" onclick="apps()"></a>
+      <div id="appsId"class="apps-div" onclick="divApps()">
+        <ul class="ul-apps">
+          <li class="li-apps">
+            <a class="a-apps" href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app">
+              <div class="apps-img" id="img1"></div>
+              <span class="apps-txt">Мой аккаунт</span>
+            </a>
+          </li>
+          <li class="li-apps">
+            <a class="a-apps" href="https://www.google.by/webhp?tab=ww&ei=TZ5GWfiIBcvX6QTVlbqgDg&ved=0EKkuCAIoAQ">
+              <div class="apps-img" id="img2"></div>
+              <span class="apps-txt">Поиск</span>
+            </a>
+          </li>
+          <li class="li-apps">
+            <a class="a-apps" href="https://maps.google.by/maps?hl=ru&tab=wl">
+              <div class="apps-img" id="img3"></div>
+              <span class="apps-txt">Карты</span>
+            </a>
+          </li>
+          <li class="li-apps">
+            <a class="a-apps" href="https://www.youtube.com/?gl=BY">
+              <div class="apps-img" id="img4"></div>
+              <span class="apps-txt">YouTube</span>
+            </a>
+          </li>
+          <li class="li-apps">
+            <a class="a-apps" href="https://play.google.com/?hl=ru&tab=w8">
+              <div class="apps-img" id="img5"></div>
+              <span class="apps-txt">Play</span>
+            </a>
+          </li>
+          <li class="li-apps">
+            <a class="a-apps" href="https://mail.google.com/mail/?tab=wm">
+              <div class="apps-img" id="img6"></div>
+              <span class="apps-txt">Почта</span>
+            </a>
+          </li>
+          <li class="li-apps">
+            <a class="a-apps" href="https://drive.google.com/?tab=wo">
+              <div class="apps-img" id="img7"></div>
+              <span class="apps-txt">Диск</span>
+            </a>
+          </li>
+          <li class="li-apps">
+            <a class="a-apps" href="https://www.google.com/calendar?tab=wc">
+              <div class="apps-img" id="img8"></div>
+              <span class="apps-txt">Календарь</span>
+            </a>
+          </li>
+          <li class="li-apps">
+            <a class="a-apps" href="https://plus.google.com/?gpsrc=ogpy0&tab=wX">
+              <div class="apps-img" id="img9"></div>
+              <span class="apps-txt">Google+</span>
+            </a>
+          </li>
+          <li class="li-apps">
+            <a class="a-apps" href="https://translate.google.by/?hl=ru&tab=wT">
+              <div class="apps-img" id="img10"></div>
+              <span class="apps-txt">Переводчик</span>
+            </a>
+          </li>
+          <li class="li-apps">
+            <a class="a-apps" href="https://photos.google.com/?tab=wq&pageId=none">
+              <div class="apps-img" id="img11"></div>
+              <span class="apps-txt">Фото</span>
+            </a>
+          </li>
+        </ul>
+        <a class="yet" href="https://www.google.by/intl/ru/options/">Ещё</a>
+      </div>
+    </div>
 		<a id="enter" onclick="sign()">Войти</a>
 	</span>
   </header>
@@ -28,7 +101,7 @@
 		</figure>
 		<div id="search">
 			<div class="text-field-div">
-				<input id = "input" class="text-field" type="text">
+				<input id = "input" class="text-field" onkeypress="return search(event)" type="text">
 			</div>
 			<div id="buttons">
 				<a id="keyboard"></a>

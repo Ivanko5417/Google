@@ -96,6 +96,24 @@ html
 	right:auto;
 	left:0;
 }
+.apps-div-m
+{
+	display: inline-block;
+	position: relative;
+}
+.apps-div
+{
+	position: absolute;
+	display: none;
+	margin-top: 20px;
+	right: -100px;
+	height: 496px;
+	width: 330px;
+	background-color: white;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+		z-index: 1;
+}
 #apps
 {
 	position: relative;
@@ -110,6 +128,110 @@ html
 {
 	cursor: pointer;
 	background-image: url(../res/appsH.png);
+}
+.ul-apps
+{
+	position: relative;
+	padding: 28px;
+	padding-right: 27px;
+}
+.li-apps
+{
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	height: 89px;
+	width: 86px;
+	padding: 1px;
+}
+.li-apps:hover .a-apps
+{
+	border: 1px solid #e5e5e5;
+	margin-left: -1px;
+	margin-top: -1px;
+}
+.a-apps
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 84px;
+	height: 84px;
+}
+.apps-img
+{
+	display: inline-block;
+	text-align: center;
+	height: 64px;
+	width: 64px;
+	background-image: url(../res/backgroundApps.png);
+	background-repeat: no-repeat;
+}
+.apps-txt
+{
+	position: absolute;
+	display: block;
+	bottom: -10px;
+	text-align: center;
+	font-size: 13px;
+	color: black;
+	width: 84px;
+}
+#img1
+{
+	background-position: 0 -1242px;
+}
+#img2
+{
+	background-position: 0 -2001px;
+}
+#img3
+{
+	background-position: 0 -621px;
+}
+#img4
+{
+	background-position: 0 -966px;
+}
+#img5
+{
+	background-position: 0 -483px;
+}
+
+#img6
+{
+	background-position: 0 -1035px;
+}
+#img7
+{
+	background-position: 0 -897px;
+}
+#img8
+{
+	background-position: 0 -1794px;
+}
+#img9
+{
+	background-position: 0 -414px;
+}
+#img10
+{
+	background-position: 0 -1104px;
+}
+#img11
+{
+	background-position: 0 -69px;
+}
+.yet
+{
+	position: absolute;
+	bottom: 0;
+	height: 40px;
+	width: 330px;
+	font-size: 13px;
+	text-align: center;
+	color: #737373;
+	background-color: #f5f5f5;
 }
 #keyboard
 {
